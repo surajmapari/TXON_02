@@ -1,0 +1,88 @@
+.calculator-heading {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 480px) {
+    .calculator-heading {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+}
+
+.expression {
+    width: 98%;
+    font-size: 20px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.calculator {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: right;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.operator {
+    background-color: #ff9500;
+    color: #fff;
+}
+
+.calculate {
+    background-color: #ff5f5f;
+    color: #fff;
+}
+
+.clear {
+    background-color: #777;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+@media screen and (max-width: 480px) {
+    .calculator {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    input[type="text"] {
+        font-size: 18px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 18px;
+    }
+}
